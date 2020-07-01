@@ -1,0 +1,54 @@
+.recipe{
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px #505050;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: white;
+    align-items: center;
+    min-width: 40%;
+}
+
+.link{
+    position: relative;
+    bottom: 0;
+    color: white;
+    margin-bottom: -2px;
+    background: lightcoral;
+    padding: 20px 0;
+    margin-top: 1em;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+.link:hover{
+    background: #333333;
+}
+.heading{
+    text-transform: uppercase;
+}
+.properties{
+    width: 100%;
+    display: flex;
+}
+.properties div{
+    flex: 50%;
+    text-align: center;
+    background: #333333;
+    color: white;
+    padding: 1em 0;
+    font-weight: bold;
+}
+
+.properties .calories {
+    background: lightcoral;
+}
+
+.image{
+    border-radius: 50px;
+    width: 30%;
+}

@@ -2,6 +2,14 @@
   min-height: 100vh;
   background: rgb(6, 93, 89);
   background: linear-gradient(90deg, rgba(6, 93, 89, 1) 0%, rgba(44, 167, 113, 1) 35%, rgba(82, 255, 204, 0.8603816526610644) 100%);
+  padding: 1em 0;
+  font-family:  "Roboto", sans-serif;
+}
+
+h1{
+  text-align: center;
+  font-size: 3em;
+  color: white;
 }
 .search-form {
   min-height: 10vh;
@@ -10,9 +18,10 @@
   align-items: center;
 }
 .search-bar{
-  width: 50%;
+  width: 30%;
   border: none;
   padding: 10px;
+  border-radius: 10px 0 0 10px;
 }
 
 .search-button{
@@ -20,10 +29,30 @@
   border: none;
   padding: 10px 20px;
   color: white;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+}
+
+.search-button:hover{
+  background: #333333;
+
 }
 
 .recipes{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+
+.ingredients {
+  list-style: none; /* Remove default bullets */
+}
+
+.ingredients li::before {
+  content: "\01F7B4";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: rgba(44, 167, 113, 1);
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  padding-right: 10px; /* Also needed for space (tweak if needed) */
 }
