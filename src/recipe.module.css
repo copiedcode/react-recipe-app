@@ -10,6 +10,14 @@
     min-width: 40%;
 }
 
+.recipe div {
+    align-items: center;
+}
+
+.recipe div {
+
+}
+
 .link{
     position: relative;
     bottom: 0;
@@ -28,8 +36,14 @@
 .link:hover{
     background: #333333;
 }
+
+.header {
+    width: 100%;
+    text-align: center;
+}
 .heading{
     text-transform: uppercase;
+    font-weight: 500;
 }
 .properties{
     width: 100%;

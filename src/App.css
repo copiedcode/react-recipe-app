@@ -1,14 +1,15 @@
 .App {
   min-height: 100vh;
   background: linear-gradient(90deg, rgba(6, 93, 89, 1) 0%, rgba(44, 167, 113, 1) 35%, rgba(82, 255, 204, 0.8603816526610644) 100%);
-  padding: 1em 0;
   font-family:  "Roboto", sans-serif;
 }
 
 h1{
+  padding: 1em 0 .5em;
   text-align: center;
   font-size: 3em;
   color: white;
+  margin: 0;
 }
 
 hr{
@@ -54,16 +55,27 @@ hr{
   justify-content: center;
   flex-wrap: wrap;
 }
-
 .ingredients {
-  list-style: none; /* Remove default bullets */
+  text-align: center;
 }
 
-.ingredients li::before {
+.ingredients ul {
+  list-style: none; /* Remove default bullets */
+}
+.ingredients ul li {
+  text-align: left;
+}
+
+.ingredients ul li::before {
   content: "\01F7B4";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
   color: rgba(44, 167, 113, 1);
   font-weight: bold; /* If you want it to be bold */
   display: inline-block; /* Needed to add space between the bullet and the text */
   width: 1em; /* Also needed for space (tweak if needed) */
   padding-right: 10px; /* Also needed for space (tweak if needed) */
+}
+
+.placeholder-text{
+  color: white;
+  text-align: center;
 }

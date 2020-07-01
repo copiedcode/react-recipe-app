@@ -9,7 +9,7 @@ const App = () => {
 
   const  [recipes, setRecipes] = useState([]);
   const [search, setSearch] = useState('');
-  const [query, setQuery] = useState('chicken');
+  const [query, setQuery] = useState('');
 
 
 useEffect(() => {
@@ -44,20 +44,27 @@ const getSearch = e => {
               Search
             </button>
           </form>
-        <div className="recipes">
-      {recipes.map(recipe => (
-        <Recipe
-          key={recipe.recipe.label} 
-          title={recipe.recipe.label}
-          calories={parseInt(recipe.recipe.calories).toString()}
-          image={recipe.recipe.image}
-          ingredients={recipe.recipe.ingredients}
-          dietLabels={recipe.recipe.dietLabels}
-          link={recipe.recipe.url}
-          servings={recipe.recipe.yield}
-        />
-      ))}
-        </div>
+        {query !== '' ?
+            <div className="recipes">
+                {recipes.map(recipe => (
+                    <Recipe
+                        key={recipe.recipe.label}
+                        title={recipe.recipe.label}
+                        calories={parseInt(recipe.recipe.calories).toString()}
+                        image={recipe.recipe.image}
+                        ingredients={recipe.recipe.ingredients}
+                        dietLabels={recipe.recipe.dietLabels}
+                        link={recipe.recipe.url}
+                        servings={recipe.recipe.yield}
+                    />
+                ))}
+            </div> :
+            <div className="placeholder-text">
+                <h2>Enter a keyword to discover new recipes.</h2>
+            </div>
+        }
+
+
     </div>
   )
 }
