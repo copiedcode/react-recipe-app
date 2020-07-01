@@ -54,6 +54,7 @@ const getSearch = e => {
           ingredients={recipe.recipe.ingredients}
           dietLabels={recipe.recipe.dietLabels}
           link={recipe.recipe.url}
+          servings={recipe.recipe.yield}
         />
       ))}
         </div>

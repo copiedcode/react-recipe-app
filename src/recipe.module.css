@@ -4,7 +4,7 @@
     margin: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     background: white;
     align-items: center;
     min-width: 40%;
@@ -51,4 +51,8 @@
 .image{
     border-radius: 50px;
     width: 30%;
+}
+
+.primary {
+    color: rgb(6, 93, 89);
 }
