@@ -1,6 +1,7 @@
 {
   "name": "recipe-app",
   "version": "0.1.0",
+  "homepage": "file:///C:/Users/CLEVO/react/recipe-app/build/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",

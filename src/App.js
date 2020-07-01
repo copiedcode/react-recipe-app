@@ -4,8 +4,8 @@ import './App.css';
 
 const App = () => {
 
-  const APP_ID = 'd2339bbf';
-  const APP_KEY = '031ceed39e60a0a66da5226abf482345';
+  const APP_ID = process.env.REACT_APP_APP_ID;
+  const APP_KEY = process.env.REACT_APP_APP_KEY;
 
   const  [recipes, setRecipes] = useState([]);
   const [search, setSearch] = useState('');
@@ -37,6 +37,7 @@ const getSearch = e => {
   return(
     <div className="App">
         <h1>Raphael's Kitchen</h1>
+        <p className="centertext">Lets search for some nice recipes...</p>
           <form className="search-form" onSubmit={getSearch}>
             <input className="search-bar" type="text" value={search} onChange={updateSearch}/>
             <button className="search-button" type="submit">
